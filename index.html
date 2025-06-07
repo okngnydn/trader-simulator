@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trader Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💸 Trader Simulator</h1>
+    <div id="balance">Bakiye: $<span id="balance-value">10000</span></div>
+
+    <div class="market-select">
+      <label for="market">Piyasa:</label>
+      <select id="market">
+        <option value="crypto">Kripto</option>
+        <option value="stocks">Hisse</option>
+      </select>
+    </div>
+
+    <div class="trade-section">
+      <input type="text" id="symbol" placeholder="Coin veya Hisse Sembolü (örn: BTC, AAPL)" />
+      <input type="number" id="amount" placeholder="Miktar" />
+      <button id="buy-btn">Al</button>
+      <button id="sell-btn">Sat</button>
+    </div>
+
+    <div id="message"></div>
+
+    <h2>📊 Portföy</h2>
+    <table id="portfolio-table">
+      <thead>
+        <tr>
+          <th>Sembol</th>
+          <th>Miktar</th>
+          <th>Mevcut Değer</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>📜 İşlem Geçmişi</h2>
+    <ul id="history"></ul>
+  </div>
+
+  <script src="api.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
