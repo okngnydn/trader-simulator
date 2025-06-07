@@ -1,0 +1,125 @@
+/* Genel stil */
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Başlık ve Bakiye */
+h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+#balance {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Seçim alanları */
+.market-select {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.market-select select {
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Al/Sat bölümü */
+.trade-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.trade-section input,
+.trade-section button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.trade-section button {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+.trade-section button:last-child {
+  background-color: #f44336;
+}
+
+/* Mesajlar */
+#message {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d32f2f;
+  font-weight: bold;
+}
+
+/* Tablo */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+/* Geçmiş */
+#history {
+  list-style: none;
+  padding: 0;
+}
+
+#history li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .trade-section input,
+  .trade-section button {
+    font-size: 15px;
+  }
+
+  table th, table td {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
